@@ -1,5 +1,5 @@
 <?php
-    use App\Models\mahasiswa;
+     use Illuminate\Support\Facades\DB;
 ?>
 
 <html>
@@ -60,10 +60,11 @@
       </nav>
      </header>
         <body>
-        <p>Nama     : Marcella Kholib </p>
-        <p>NIM      : 03081200007</p>
-        <p>Term     : 5</p>
-        <p>Total SKS: 22</p>
+        <p>Nama          : Marcella Kholib </p>
+        <p>Student ID    : 03081200007</p>
+        <p>Jenis Kelamin : Perempuan</p>
+        <p>Tannggal Lahir: 18 Agustus 2002</p>
+        <p>Term     : 1212</p>
         <p>Matakuliah yang diambil:</p>
         <table class="table table-striped table-hover">
             <tr>

@@ -28,4 +28,12 @@ Route::put('/mahasiswa/{id}', 'update');
 Route::get('/mahasiswa', 'index');
 Route::get('/profile', 'profile');
 
+
 });
+
+Route::get('/laporan/mahasiswa', [LaporanController::class,'index']);
+Route::get('/laporan/mahasiswapdf', [LaporanController::class,'cetak_pdf']);
+Route::resource('/admin/mahasiswa','App\Http\Controllers\Admin\mahasiswaController');
+
+Route::resource('admin/mahasiswa', 'App\Http\Controllers\Admin\mahasiswaController');
+Route::resource('admin/matakuliah', 'App\Http\Controller\Admin\matakuliahController');
